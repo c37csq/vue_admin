@@ -6,6 +6,41 @@
   "description": "vue后台管理",
   "glyphs": [
     {
+      "icon_id": "2907432",
+      "name": "报 表 管 理",
+      "font_class": "baobiaoguanli",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "7849986",
+      "name": "立方体 立体 多面体 方块2",
+      "font_class": "soucang",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "9156031",
+      "name": "商品",
+      "font_class": "shangpin",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "10964253",
+      "name": "单据",
+      "font_class": "danju",
+      "unicode": "e6c7",
+      "unicode_decimal": 59079
+    },
+    {
+      "icon_id": "11077254",
+      "name": "用户",
+      "font_class": "yonghugroup",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
       "icon_id": "6816636",
       "name": "锁",
       "font_class": "suo",
