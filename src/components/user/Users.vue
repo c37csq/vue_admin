@@ -21,7 +21,7 @@
       </el-row>
       <!-- 用户列表区域 -->
       <el-table :data="userList" border stripe style="width: 100%">
-        <el-table-column fixed style="width: 100%" type="index" label="#"></el-table-column>
+        <el-table-column fixed style="width: 100%" type="index" label="#" :index="indexMethod"></el-table-column>
         <el-table-column label="姓名" prop="username"></el-table-column>
         <el-table-column label="邮箱" prop="email"></el-table-column>
         <el-table-column label="电话" prop="mobile"></el-table-column>
@@ -210,6 +210,7 @@ export default {
       const { data: res } = await this.$http.get('users', { params: this.queryInfo })
       if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
       this.userList = res.data.users
+      console.log(this.userList)
       this.total = res.data.total
     },
     // 监听pagesize
@@ -334,6 +335,12 @@ export default {
     setRoleDialogClosed () {
       this.selectRoleId = ''
       this.userInfo = {}
+    },
+    indexMethod (index) {
+      if (this.queryInfo.pagenum === 1) return index + 1
+      else {
+        return (this.queryInfo.pagenum - 1) * this.queryInfo.pagesize + index + 1
+      }
     }
   }
 }

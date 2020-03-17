@@ -8,3 +8,10 @@ html, body, #app {
   min-width: 1366px;
 }
 
+.zk-table__header-row .zk-table__header-cell div.zk-table__cell-inner.zk-table--firstProp-header-inner {
+  padding-left: 12px !important;
+}
+
+.el-cascader-panel {
+  height: 250px;
+}
